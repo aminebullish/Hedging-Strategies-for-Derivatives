@@ -1,0 +1,13 @@
+# Compilation avec un terminal Unix:
+
+mkdir build
+cd build
+cmake -DCMAKE_PREFIX_PATH=/matieres/5MMPCPD/pnl -DCMAKE_BUILD_TYPE=Release ..
+make
+
+
+# Executables (dans build):
+
+./price0 "chemin vers data_input"
+
+./hedge "chemin vers market_file" "chemin vers data_input"
